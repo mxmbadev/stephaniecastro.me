@@ -1,0 +1,40 @@
+@import '../../../node_modules/milligram/src/milligram.sass';
+@import 'typography';
+@import 'variables';
+
+body{
+  margin: 0;
+}
+
+.container{
+  max-width: 1440px;
+  padding-right: 5.563em;
+  padding-left: 5.563em;
+}
+
+.center-column{
+  margin: 0 auto !important;
+  float: none;
+}
+
+.button{
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 40px;
+  height: auto;
+  @include transition(all, .3s);
+  &:hover{
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
+    transform: translateY(-4px);
+    @include transition(all, .3s);
+  }
+}
+.btn-pink{
+  background-color: $pink;
+  border-color: $pink;
+}
+.btn-teal{
+  background-color: $teal;
+  border-color: $teal;
+}

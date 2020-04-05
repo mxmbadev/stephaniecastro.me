@@ -1,0 +1,15 @@
+// Colors
+$white: #fff;
+$black: #000;
+$teal: #6c9a8b;
+$pink: #e8998d;
+$light-pink: #eed2cc;
+$brown: #c6a49a;
+
+// Transitio Effect
+@mixin transition($transition...) {
+  -moz-transition:    $transition !important;
+  -o-transition:      $transition !important;
+  -webkit-transition: $transition !important;
+  transition:         $transition !important;
+}
