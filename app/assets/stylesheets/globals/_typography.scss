@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Raleway&display=swap');
 
 h1 {
   font-size:72px;
   line-height:78px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 200;
  }
  h2 {
   font-size:48px;
   line-height:52px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 200;
  }
  h3,h4,h5{
     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
  }
 
  a.text{
@@ -20,6 +23,8 @@ h1 {
  }
  p{
      font-size: 16px;
+     color: #000;
+     font-family: 'Raleway', sans-serif;
  }
 
  @media (max-width: 768px){
