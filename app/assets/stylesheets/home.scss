@@ -7,7 +7,7 @@
   background-image: url('/assets/hero-bg.jpg');
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
@@ -20,7 +20,23 @@
 }
 
 #about-me{
+    padding-top: 3%;
+    padding-bottom: 3%;
     h1{
         font-weight: 100;
+    }
+}
+
+#services{
+    padding: 6% 0;
+    background-image: url('/assets/marble-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    color: $white;
+    .services-details{
+        padding-top: 3%;
     }
 }
