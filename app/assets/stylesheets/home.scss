@@ -1,8 +1,9 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "nav";
 
-#home{
+#home {
   background-image: url('/assets/hero-bg.jpg');
   background-position: center;
   background-size: cover;
@@ -10,7 +11,8 @@
   background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
-  .bg-content{
+
+  .bg-content {
     display: flex;
     align-items: center;
     height: 100vh;

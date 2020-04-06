@@ -23,6 +23,7 @@ body{
   font-weight: 400;
   border-radius: 40px;
   height: auto;
+  text-transform: none;
   @include transition(all, .3s);
   &:hover{
     box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
