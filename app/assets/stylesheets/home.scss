@@ -111,6 +111,22 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .container {
+        padding: 0 1.5em !important;
+    }
+    #home .bg-content h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    #home,
+    #services,
+    #contact-me {
+        background-attachment: scroll;
+    }
+    #contact-me {
+        background-position: inherit;
+        height: auto;
+    }
     .about-details,
     .services-details,
     .contact-form {
