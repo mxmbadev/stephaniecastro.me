@@ -10,7 +10,7 @@ class Contact < MailForm::Base
       {
         :subject => "Clear Choice Contact Form",
         :to => ['espinozab100@gmail.com', 'espinozasteph526@gmail.com'],
-        :from => %("#{name}" <#{email}>)
+        :from => %("#{first_name}" + "#{last_name}" <#{email}>)
       }
     end
   end

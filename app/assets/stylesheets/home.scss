@@ -2,16 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "nav";
-
 #home {
-  background-image: url('/assets/hero-bg.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: #fff;
-  .transition-bg-1{
+    background-image: url('/assets/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    .transition-bg-1 {
         background-image: url('/assets/bg-transition-1.png');
         background-position: bottom;
         background-size: cover;
@@ -20,22 +19,21 @@
         height: 400px;
         margin-top: -150px;
     }
-
-  .bg-content {
-    display: flex;
-    align-items: center;
-    height: 90vh;
-    h1{
-        font-weight: 200;
+    .bg-content {
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        h1 {
+            font-weight: 200;
+        }
     }
-  }
 }
 
-#about-me{
+#about-me {
     padding: 6% 0;
 }
 
-#services{
+#services {
     padding: 6% 0;
     background-image: url('/assets/services-hero-bg.jpg');
     background-position: center;
@@ -44,44 +42,47 @@
     background-repeat: no-repeat;
     height: auto;
     color: $black;
-    .services-details{
+    .services-details {
         padding-top: 6%;
-        h5,h4{
+        h5,
+        h4 {
             text-transform: uppercase;
             font-weight: 200;
         }
     }
 }
 
-#my-portfolio{
+#my-portfolio {
     padding: 6% 0;
-    .projects{
+    .projects {
         padding-top: 6%;
         max-width: 100%;
         flex-wrap: wrap;
         flex-grow: 3;
         margin: 0 auto;
         float: none;
-        .column{
-            .card{
+        .column {
+            .card {
                 background: $white;
                 border-radius: 4px;
                 height: 400px;
                 display: block;
                 margin-bottom: 50px;
-                box-shadow: 0 0 10px 0 rgba(0,0,0,.14);
-                @include transition(all, .3s);
-                &:hover{
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, .14);
+                @include transition(all,
+                .3s);
+                &:hover {
                     box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
                     transform: translateY(-4px);
-                    @include transition(all, .3s);
+                    @include transition(all,
+                    .3s);
                 }
             }
         }
     }
 }
 
-#contact-me{
+#contact-me {
     padding: 0 0 6% 0;
     background-color: #f4f4f4;
     background-image: url('/assets/contact-hero-bg.jpg');
@@ -91,7 +92,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     color: $black;
-    .transition-bg-2{
+    .transition-bg-2 {
         background-image: url('/assets/bg-transition-2.png');
         background-position: top;
         background-size: cover;
@@ -99,26 +100,32 @@
         background-repeat: no-repeat;
         height: 400px;
     }
-    form h1{
+    form h1 {
         margin-bottom: 6%;
     }
 }
 
-
 @media screen and (max-width: 1000px) {
     .about-details,
-    .services-details{
+    .services-details,
+    .contact-form {
         flex-wrap: wrap;
     }
-    .about-details .column, .services-details .column, .projects .column {
+    .about-details .column,
+    .services-details .column,
+    .projects .column,
+    .contact-form .column {
         flex-basis: 50% !important;
         max-width: 100% !important;
         margin-left: 0px !important;
     }
 }
-  
+
 @media screen and (max-width: 780px) {
-    .about-details .column, .services-details .column, .projects .column {
+    .about-details .column,
+    .services-details .column,
+    .projects .column,
+    .contact-form .column {
         flex-basis: 100% !important;
         max-width: 100% !important;
     }
