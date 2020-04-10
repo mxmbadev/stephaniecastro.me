@@ -77,6 +77,11 @@
                     @include transition(all,
                     .3s);
                 }
+                h4 {
+                    text-align: center;
+                    padding: 10px;
+                    color: $black;
+                }
             }
         }
     }
