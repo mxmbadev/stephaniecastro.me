@@ -1,73 +1,85 @@
 @import '../../../node_modules/milligram/src/milligram.sass';
 @import 'typography';
 @import 'variables';
-
-body{
-  margin: 0;
+body {
+    margin: 0;
 }
 
-.container{
-  max-width: 1440px;
-  padding-right: 5.563em;
-  padding-left: 5.563em;
+.container {
+    max-width: 1440px;
+    padding-right: 5.563em;
+    padding-left: 5.563em;
 }
 
-.center-column{
-  margin: 0 auto !important;
-  float: none;
+.center-column {
+    margin: 0 auto !important;
+    float: none;
 }
 
-.button{
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 40px;
-  height: auto;
-  text-transform: none;
-  @include transition(all, .3s);
-  &:hover{
-    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
-    transform: translateY(-4px);
+.button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 40px;
+    height: auto;
+    text-transform: none;
     @include transition(all, .3s);
-  }
-}
-.btn-pink{
-  background-color: $pink;
-  border-color: $pink;
-}
-.btn-teal{
-  background-color: $teal;
-  border-color: $teal;
+    &:hover {
+        box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
+        transform: translateY(-4px);
+        @include transition(all, .3s);
+    }
 }
 
-.black-text{
+.btn-pink {
+    background-color: $pink;
+    border-color: $pink;
+}
+
+.btn-teal {
+    background-color: $teal;
+    border-color: $teal;
+}
+
+.black-text {
     color: $black;
 }
 
-.white-text{
+.white-text {
     color: $white;
 }
 
-form{
+form {
     margin-top: 26%;
     width: 100%;
-    label{
+    label {
         font-weight: 400;
     }
-    input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], textarea, select{
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="url"],
+    textarea,
+    select {
         border-radius: 0px;
         border-top: none;
         border-left: none;
         border-right: none;
         border-bottom: 2px solid $black;
         @include transition(all, .3s);
-        &:focus{
+        &:focus {
             border-color: $teal;
             border-width: 4px;
             @include transition(all, .3s);
         }
     }
-    .comments{
+    .comments {
         margin-top: 3%;
+    }
+    div.column.hidden {
+        display: none;
     }
 }
