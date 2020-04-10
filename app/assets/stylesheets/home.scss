@@ -59,18 +59,23 @@
         padding-top: 6%;
         max-width: 100%;
         flex-wrap: wrap;
-        .card{
-            background: $white;
-            border-radius: 4px;
-            height: 400px;
-            display: block;
-            margin-bottom: 50px;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,.14);
-            @include transition(all, .3s);
-            &:hover{
-                box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
-                transform: translateY(-4px);
+        flex-grow: 3;
+        margin: 0 auto;
+        float: none;
+        .column{
+            .card{
+                background: $white;
+                border-radius: 4px;
+                height: 400px;
+                display: block;
+                margin-bottom: 50px;
+                box-shadow: 0 0 10px 0 rgba(0,0,0,.14);
                 @include transition(all, .3s);
+                &:hover{
+                    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.24);
+                    transform: translateY(-4px);
+                    @include transition(all, .3s);
+                }
             }
         }
     }
@@ -93,5 +98,25 @@
         background-attachment: scroll;
         background-repeat: no-repeat;
         height: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about-details,
+    .services-details{
+        flex-wrap: wrap;
+    }
+    .about-details .column, .services-details .column, .projects .column {
+        flex-basis: 50% !important;
+        max-width: 100% !important;
+        margin-left: 0px !important;
+    }
+}
+  
+@media screen and (max-width: 780px) {
+    .about-details .column, .services-details .column, .projects .column {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
     }
 }
