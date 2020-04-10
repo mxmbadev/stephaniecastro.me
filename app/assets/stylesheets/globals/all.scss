@@ -47,3 +47,27 @@ body{
 .white-text{
     color: $white;
 }
+
+form{
+    margin-top: 26%;
+    width: 100%;
+    label{
+        font-weight: 400;
+    }
+    input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], textarea, select{
+        border-radius: 0px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $black;
+        @include transition(all, .3s);
+        &:focus{
+            border-color: $teal;
+            border-width: 4px;
+            @include transition(all, .3s);
+        }
+    }
+    .comments{
+        margin-top: 3%;
+    }
+}

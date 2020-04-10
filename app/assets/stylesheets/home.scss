@@ -18,7 +18,7 @@
         background-attachment: scroll;
         background-repeat: no-repeat;
         height: 400px;
-        margin-top: -250px;
+        margin-top: -150px;
     }
 
   .bg-content {
@@ -90,7 +90,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
-    color: #fff;
+    color: $black;
     .transition-bg-2{
         background-image: url('/assets/bg-transition-2.png');
         background-position: top;
@@ -98,6 +98,9 @@
         background-attachment: scroll;
         background-repeat: no-repeat;
         height: 400px;
+    }
+    form h1{
+        margin-bottom: 6%;
     }
 }
 
